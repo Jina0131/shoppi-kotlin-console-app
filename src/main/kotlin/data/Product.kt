@@ -1,6 +1,6 @@
 package data
 
-data class product(
+data class Product(
     val categoryLabel: String,
     val name: String
 )

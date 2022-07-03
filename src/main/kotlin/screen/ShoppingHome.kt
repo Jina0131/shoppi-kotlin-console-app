@@ -8,7 +8,7 @@ class shoppingHome {
     }
 
     private fun showCategories() {
-        val shoppingCategory = shoppingCategory()
+        val shoppingCategory = ShoppingCategory()
         shoppingCategory.showCategories()
     }
 

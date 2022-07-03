@@ -1,6 +1,13 @@
 package screen
 
-class shoppingCategory {
+/*
+실습 4
+1. 장바구니에 추가한 상품 관리
+2. 사용자 입력값 요청 처리 공통화
+3. 프로젝트 전역에서 참조하는 상수
+ */
+
+class ShoppingCategory {
     fun showCategories() {
         /*
         실습 2
@@ -22,16 +29,17 @@ class shoppingCategory {
         }
         if (selectedCategory == "#") {
             //TODO 1. 장바구니 이동
+            val shoppingCart = ShoppingCart()
         } else {
             if (categories.contains(selectedCategory)) {
                 //카테고리 상품 목록 보여주기
-                val shoppingProductList = shoppingProductList()
+                val shoppingProductList = ShoppingProductList()
                 shoppingProductList.showProducts(selectedCategory)
             } else {
                 showErrorMassage(selectedCategory)
             }
         }
-        }
+    }
 
     private fun showErrorMassage(selectedCategory: String?) {
         //카테고리 목록에 없는 값을 입력하는 경우
