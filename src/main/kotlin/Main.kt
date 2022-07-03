@@ -1,4 +1,4 @@
-import screen.shoppingHome
+import screen.ShoppingHome
 
 fun main(args: Array<String>) { //fun: 함수 정의
     /*
@@ -7,6 +7,6 @@ fun main(args: Array<String>) { //fun: 함수 정의
     2. 화면별 클래스 분리
     3. 선택한 카테고리 상품 목록 표시
      */
-    val shoppingHome = shoppingHome()
+    val shoppingHome = ShoppingHome()
     shoppingHome.start()
 }

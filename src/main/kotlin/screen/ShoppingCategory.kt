@@ -9,8 +9,9 @@ import extensions.getNotEmptyString
 3. 프로젝트 전역에서 참조하는 상수
  */
 
-class ShoppingCategory {
+class ShoppingCategory : Screen() {
     fun showCategories() {
+        ScreenStack.push(this)
         /*
         실습 2
         1. 상품 카테고리 표기

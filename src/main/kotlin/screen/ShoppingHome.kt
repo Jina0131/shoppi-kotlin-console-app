@@ -3,7 +3,12 @@ package screen
 import LINE_DIVIDER
 import extensions.getNotEmptyString
 
-class shoppingHome {
+/*
+1. 화면이동을 관리하는 Stack
+2. 장바구니 이전화면 이동 구현
+ */
+
+class ShoppingHome : Screen() {
 
     fun start() {
         showWelcomeMassage()
@@ -16,6 +21,7 @@ class shoppingHome {
     }
 
     private fun showWelcomeMassage() {
+        ScreenStack.push(this)
         /*
         실습 1
         1. 인사말 출력
